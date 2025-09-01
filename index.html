@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>CI Uruguay - Verificador</title>
+</head>
+<body>
+  <h2>Comprobador de CI Uruguay</h2>
+  <link rel="stylesheet" href="style.css">
+  <form action="comprobar.php" method="POST">
+    <label>Ingrese CI completa (8 dígitos):</label><br>
+    <input type="text" name="ci" maxlength="8" required>
+    <button type="submit">Comprobar</button>
+  </form>
+
+  <h2>Generador de Dígito Verificador</h2>
+  <form action="generar.php" method="POST">
+    <label>Ingrese primeros 7 dígitos:</label><br>
+    <input type="text" name="ci7" maxlength="7" required>
+    <button type="submit">Generar</button>
+  </form>
+</body>
+</html>
